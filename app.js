@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Middleware
-app.use(bodyParser.json());
+app.use(express.json());
 
 // Routes
 import routes from "./Routes/job.routes.js";
